@@ -1,11 +1,11 @@
 def badge_maker(name = "Arel")
   
-    "Hello, my name is #{name}."
+  "Hello, my name is #{name}."
 end
  
 def batch_badge_creator(attendees)
   
-    attendees.map {|name| "Hello, my name is #{name}."}
+  attendees.map {|name| "Hello, my name is #{name}."}
 end
  
 def assign_rooms(room_assignments)
@@ -15,10 +15,7 @@ end
 
 def printer(badges_and_room_assignments)
   
-    attendees.map do |name|
-      puts "Hello, my name is #{name}."
-    end  
-    room_assignments.each do |name, room|
-      puts "#{name}#{room}"
-    end  
+  attendees.map {|name| puts "Hello, my name is #{name}."}
+     
+  room_assignments.each {|name, room| puts "#{name}#{room}"}
 end
